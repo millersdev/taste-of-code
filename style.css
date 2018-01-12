@@ -1,0 +1,76 @@
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section, aside{
+    background-color: lightgray;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+aside{
+    display: inline-block;
+}
+article{
+    width:100%;
+    background-color: white;    
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+article h2{
+    margin: 0;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+article:last-child{
+    margin: 0;
+    margin-bottom: 0px;
+}
+
+article p{
+    margin: 0px;
+}
+
+.form-element{
+    overflow:hidden;
+    margin-bottom: 10px;
+}
+
+label, input, textarea{
+    /* float:left; */
+    display: block;
+}
+
+label{
+    /* width: 125px; */
+    text-transform: uppercase;
+}
+
+input, textarea{
+    width: 200px;
+    border: none;
+    padding: 5px;
+}
+
+input{
+    min-height: 20px;
+}
+textarea{
+    height: 100px;
+}
+input#submit{
+    height: 40px;
+    text-transform: uppercase;
+}
