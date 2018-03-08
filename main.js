@@ -1,5 +1,3 @@
-
-
 function renderArticles(item) {
     var article = document.createElement("article");
 
@@ -28,12 +26,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     var form = document.getElementById('new-article');
     form.addEventListener('submit', function (evt) {
-        evt.preventDefault();
+        evt.preventDefault(); 
         var title = evt.target[0].value;
         var text = evt.target[1].value;
-        easyPost(title, text)
+        dataObj = {'title': title, 'text':text}
+        easyPost(dataObj)
     })
-
 })
 
 

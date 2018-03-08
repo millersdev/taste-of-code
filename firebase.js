@@ -10,20 +10,20 @@ function easyFetch() {
             }
             return response.json()
         })
-        .catch(function (err) { 
+        .catch(function (err) {
             console.log('Fetch Error :-S', err);
         });
 
 }
 
-function easyPost(title, text) {
+function easyPost(dataObj) {
     return fetch('https://taste-of-code.firebaseio.com/entries.json', {
         headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
         },
         method: "POST",
-        body: JSON.stringify({title: title, text: text}),
+        body: JSON.stringify(dataObj),
         mode: 'cors'
     })
         .then(
@@ -36,7 +36,7 @@ function easyPost(title, text) {
             location.reload()
             return response.json()
         })
-        .catch(function (err) { 
+        .catch(function (err) {
             console.log('Fetch Error :-S', err);
         });
 
